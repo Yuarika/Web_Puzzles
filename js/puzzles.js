@@ -8,7 +8,7 @@ const PUZZLES = [
     id: "u-asked-time",
     title: "U asked time",
     description: "時は、問いかける。",
-    image: "images/u_asked_time.jpg",
+    image: "images/u_asked_time.png",
     url: "https://yuarika.github.io/U_asked_time/",
     difficulty: 3,
     playTime: "15～30分",
