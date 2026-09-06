@@ -17,6 +17,20 @@ const PUZZLES = [
     vrchat: false,
     vrchatUrl: ""
   },
+  {
+    id: "re-break-the-loop",
+    title: "RE:Break the LOOP",
+    description: "終わらない言葉に、終止符を。",
+    image: "images/re_break_the_loop.png",
+    url: "https://yuarika.github.io/RE_Break_the_LOOP/",
+    difficulty: 3,
+    playTime: "15～30分",
+    tags: ["Web謎", "言葉", "ひらめき"],
+    releaseDate: "2026-09-06",
+    vrchat: false,
+    vrchatUrl: ""
+  }
+
 
   // ==========================================================
   // ↓ 新しい作品はここに追加
