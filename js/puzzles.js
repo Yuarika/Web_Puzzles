@@ -1,51 +1,196 @@
 // ============================================================
 // Yuarika Web Puzzles
-// 作品を追加するときは、この配列にデータを追加してください。
+// ============================================================
+// このファイルでは、Web謎解き作品の情報を管理しています。
+//
+// 【作品を追加したい場合】
+// ↓↓↓ PUZZLES の中に作品データを追加してください ↓↓↓
+//
+// 基本的には、1作品につき { } を1つ追加するだけです。
 // ============================================================
 
+
 const PUZZLES = [
+
+  // ==========================================================
+  // 作品 1
+  // ==========================================================
   {
     id: "u-asked-time",
+
+    // 作品名
     title: "U asked time",
+
+    // 作品の説明
     description: "時は、問いかける。",
+
+    // サムネイル画像
+    // Web_Puzzles/images/ の中に画像を置いてください。
     image: "images/u_asked_time.png",
+
+    // 「WEB版で遊ぶ」ボタンのリンク先
     url: "https://yuarika.github.io/U_asked_time/",
+
+    // 難易度
+    // 1 = ★☆☆☆☆
+    // 2 = ★★☆☆☆
+    // 3 = ★★★☆☆
+    // 4 = ★★★★☆
+    // 5 = ★★★★★
     difficulty: 3,
+
+    // 想定プレイ時間
     playTime: "15～30分",
-    tags: ["Web謎", "言葉", "ひらめき"],
+
+    // タグ
+    // ここに書いたタグが検索・絞り込みに使われます。
+    tags: [
+      "Web謎",
+      "言葉",
+      "ひらめき"
+    ],
+
+    // 公開日
+    // YYYY-MM-DD の形式
     releaseDate: "2026-09-02",
+
+    // VRChat版があるか
+    // true  = VRChat版あり
+    // false = VRChat版なし
     vrchat: false,
-    vrchatUrl: ""
-  },
-  {
-    id: "re-break-the-loop",
-    title: "RE:Break the LOOP",
-    description: "終わらない言葉に、終止符を。",
-    image: "images/re_break_the_loop.png",
-    url: "https://yuarika.github.io/RE_Break_the_LOOP/",
-    difficulty: 3,
-    playTime: "15～30分",
-    tags: ["Web謎", "言葉", "ひらめき"],
-    releaseDate: "2026-09-06",
-    vrchat: false,
+
+    // VRChat版のURL
+    // vrchat が false の場合は空欄でOK
     vrchatUrl: ""
   },
 
 
   // ==========================================================
-  // ↓ 新しい作品はここに追加
+  // 作品 2
+  // ==========================================================
+  {
+    id: "re-break-the-loop",
+
+    // 作品名
+    title: "RE:Break the LOOP",
+
+    // 作品の説明
+    description: "終わらない言葉に、終止符を。",
+
+    // サムネイル画像
+    image: "images/re_break_the_loop.png",
+
+    // 「WEB版で遊ぶ」ボタンのリンク先
+    url: "https://yuarika.github.io/RE_Break_the_LOOP/",
+
+    // 難易度
+    difficulty: 3,
+
+    // 想定プレイ時間
+    playTime: "15～30分",
+
+    // タグ
+    tags: [
+      "Web謎",
+      "言葉",
+      "ひらめき"
+    ],
+
+    // 公開日
+    releaseDate: "2026-09-06",
+
+    // VRChat版があるか
+    vrchat: false,
+
+    // VRChat版のURL
+    vrchatUrl: ""
+  },
+
+
+  // ==========================================================
+  // ↓↓↓ 新しい作品はここに追加 ↓↓↓
+  // ==========================================================
   //
-  // {
-  //   id: "example",
-  //   title: "Example Puzzle",
-  //   description: "説明文",
-  //   image: "images/example.jpg",
-  //   url: "https://example.com/",
-  //   difficulty: 4,
-  //   playTime: "30～60分",
-  //   tags: ["Web謎", "探索"],
-  //   releaseDate: "2026-09-05",
-  //   vrchat: true,
-  //   vrchatUrl: "https://vrchat.com/home/world/wrld-..."
-  // }
+  // 例えば新しい作品を追加する場合は、
+  // 下のコメントを外して書き換えてください。
+  //
+  // ※ 最後の作品の } の後ろに「,」を付けるのを忘れないでください。
+  //
+
+
+  // ==========================================================
+  // 作品追加用テンプレート
+  // ==========================================================
+  /*
+  {
+    // 作品を識別するためのID
+    // 英数字とハイフンがおすすめ
+    id: "new-puzzle",
+
+    // 作品名
+    title: "新しいWeb謎",
+
+    // 作品の説明
+    description: "ここに作品の説明を書きます。",
+
+    // サムネイル画像
+    // Web_Puzzles/images/ に画像を入れてください。
+    image: "images/new-puzzle.png",
+
+    // Web謎のURL
+    url: "https://example.com/",
+
+    // 難易度
+    // 1～5
+    difficulty: 3,
+
+    // 想定プレイ時間
+    playTime: "15～30分",
+
+    // タグ
+    tags: [
+      "Web謎",
+      "言葉"
+    ],
+
+    // 公開日
+    releaseDate: "2026-09-10",
+
+    // VRChat版があるか
+    vrchat: false,
+
+    // VRChat版のURL
+    // VRChat版がなければ空欄でOK
+    vrchatUrl: ""
+  }
+  */
+
+
+  // ==========================================================
+  // 作品を追加するときのポイント
+  // ==========================================================
+  //
+  // ① id は作品ごとに違うものにする
+  //
+  // ② title は作品名
+  //
+  // ③ description は作品の説明
+  //
+  // ④ image は images フォルダ内の画像
+  //
+  // ⑤ url はWeb謎のURL
+  //
+  // ⑥ difficulty は 1～5
+  //
+  // ⑦ playTime は表示用のプレイ時間
+  //
+  // ⑧ tags は検索・絞り込みに使用
+  //
+  // ⑨ releaseDate は公開日
+  //
+  // ⑩ vrchat が true の場合、
+  //    vrchatUrl にVRChatのワールドURLを書く
+  //
+  // ==========================================================
+
 ];
