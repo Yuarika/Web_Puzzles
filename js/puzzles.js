@@ -23,6 +23,7 @@ const PUZZLES = [
 
     // 作品の説明
     description: "色々試して仕組みを解明しよう！",
+    // a
 
     // サムネイル画像
     // Web_Puzzles/images/ の中に画像を置いてください。
