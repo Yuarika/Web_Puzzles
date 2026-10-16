@@ -22,7 +22,7 @@ const PUZZLES = [
     title: "U asked time",
 
     // 作品の説明
-    // description: "時は、問いかける。",
+    description: "色々試して仕組みを解明しよう！",
 
     // サムネイル画像
     // Web_Puzzles/images/ の中に画像を置いてください。
@@ -70,7 +70,7 @@ const PUZZLES = [
     title: "RE:Break the LOOP",
 
     // 作品の説明
-    // description: "終わらない言葉に、終止符を。",
+     description: "銃を撃って謎を解こう！",
 
     // サムネイル画像
     image: "images/re_break_the_loop.png",
@@ -112,7 +112,7 @@ const PUZZLES = [
     title: "難攻不落",
 
     // 作品の説明
-   //  description: "4つのグループから正しい組み合わせを見つけ出せ。",
+   　description: "4つのグループから正しい組み合わせを見つけ出せ。",
 
     // サムネイル画像
     // Web_Puzzles/images/ の中に画像を置いてください。
