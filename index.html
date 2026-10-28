@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuarika Web Puzzles</title>
+  <meta name="description" content="ユアリカが制作したWeb謎解き作品集。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">YUARIKA<span>WEB PUZZLES</span></a>
+    <nav>
+      <a href="#puzzles">作品一覧</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">YUARIKA'S PUZZLE ARCHIVE</p>
+        <h1>WEB<br><span>PUZZLES</span></h1>
+        <p class="hero-text">ユアリカが制作したWeb謎解きを<br>ここから遊べます。</p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#puzzles">謎解きを探す</a>
+          <button class="button secondary" id="randomButton">ランダムに遊ぶ</button>
+        </div>
+      </div>
+      <div class="hero-grid"></div>
+    </section>
+
+    <section id="puzzles" class="puzzle-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PUZZLE ARCHIVE</p>
+          <h2>作品一覧</h2>
+        </div>
+        <p id="resultCount"></p>
+      </div>
+
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="作品名・説明・タグを検索">
+        <div id="tagFilters" class="tag-filters"></div>
+        <select id="difficultyFilter">
+          <option value="0">すべての難易度</option>
+          <option value="1">★☆☆☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="4">★★★★☆</option>
+          <option value="5">★★★★★</option>
+        </select>
+      </div>
+
+      <div id="puzzleGrid" class="puzzle-grid"></div>
+      <p id="emptyMessage" class="empty hidden">条件に一致する作品がありません。</p>
+    </section>
+
+    <section id="about" class="about-section">
+      <p class="eyebrow">ABOUT</p>
+      <h2>YUARIKA</h2>
+      <p>
+        主にVRChatで活動している謎解き好きです。<br>
+        VRChatで公開した謎解きは30個以上！<br>
+        無料で挑戦できるものがたくさんあるので是非遊んでみてね！
+      </p>
+      <a class="x-link" href="https://x.com/yuarikaa" target="_blank" rel="noopener">@yuarikaa</a>
+    </section>
+  </main>
+
+  <footer>© YUARIKA</footer>
+
+  <script src="js/puzzles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
